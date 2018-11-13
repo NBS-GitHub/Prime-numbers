@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --greenColor: #42b742;
+}
+body {
+/* ========================================================
+This pattern is downloaded from www.subtlepatterns.com 
+If you need more, that's where to get'em.
+======================================================== */
+    background-image: url('../img/darkness.png');
+    color: var(--greenColor);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 8vw;
+    margin: 2vw 0 4vw;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.buttonsWrap {
+    display: flex;
+}
+button {
+    display: block;
+    border: 2px solid var(--greenColor);
+    background-color: #000;
+    border-radius: 2vw;
+    color: var(--greenColor);
+    padding: 1vw 2vw;
+    font-size: 3vw;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+button:hover {
+cursor: pointer;
+background-color: transparent;
+}
+
+.speed {
+    padding: 4vw 0 2vw;
+    border-bottom: 2px solid var(--greenColor);
+    font-size: 3vw;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    margin: 2.5vw 5vw;
+    letter-spacing: 5px;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.smaller {
+    font-size: 5vw;
+    letter-spacing: normal;
+    margin-right: 5vw;
+}
+
+.arrow {
+    position: fixed;
+    right: 3vw;   
+    color: var(--greenColor);
+    background-color: #000;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1);
+    transition: .3s;
+}
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    transition: .3s;
+}
+
+.arrow:hover {
+    transform: scale(1.15);
+}
+
+.up {
+    top: 40vh;
+}
+.down {
+    top: 60vh;
+}
+.arrow.visible {
+    opacity: 1;
+}
+
+.arrow i {
+    font-size: 8vw;
+}
