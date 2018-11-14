@@ -1,8 +1,20 @@
-@keyframes resize {
+@-webkit-keyframes resize {
     50% {
-        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes resize {
+    50% {
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }

@@ -9,9 +9,8 @@ const numbers = [],
 let currentNumber = 2,
     ordinalNumber = 1,
     clickCounter = 0,
-    timer = 1000;
-
-let isResetBtnAdded = false;
+    timer = 1000,
+    isResetBtnAdded = false;
 // End of Variables
 
 // Actualization of the speed message
@@ -41,6 +40,12 @@ const addResetButton = () => {
 const resetNumbers = () => {
     window.location.reload(false);
 }
+
+// Easter egg:
+// (function (UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A) {
+// livesCount = 30;
+// })();
+// The end of the easter egg.
 
 // Main function
 const count = (e) => {
