@@ -41,12 +41,6 @@ const resetNumbers = () => {
     window.location.reload(false);
 }
 
-// Easter egg:
-// (function (UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A) {
-// livesCount = 30;
-// })();
-// The end of the easter egg.
-
 // Main function
 const count = (e) => {
 
